@@ -30,7 +30,7 @@ def sequences_dict(file_name):
                     seq_dict[key] = seq_dict[key] + line
         return seq_dict
     except:
-        print("Please, provide x.fasta and database.fasta.")
+        print(f"Please, provide {file_name} file.")
         sys.exit()
 
 def compare_sequences(unknown, database):
